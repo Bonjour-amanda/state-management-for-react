@@ -1,8 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import {Provider} from 'react-redux';
+// import {Provider} from 'react-redux';
 import {store} from './Redux/store';
 import { RecoilRoot } from 'recoil';
+import { Provider } from 'jotai'
 import App from './App'
 import './index.css'
 
@@ -14,8 +15,14 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     </Provider> */}
 
     {/* Recoil */}
-    <RecoilRoot>
+    {/* <RecoilRoot>
       <App />
-    </RecoilRoot>
+    </RecoilRoot> */}
+
+    {/* Jotai  */}
+    <Provider>
+      <App />
+    </Provider>
+    
   </React.StrictMode>,
 )
