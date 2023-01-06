@@ -28,7 +28,6 @@ function App() {
   // const [count, setCount] = useAtom(countAtom)
 
   {/* React Context */}
-  // const {count, setCount} = useContext(CounterContext)
   const [count, setCount] = useState(0)
  
   return (

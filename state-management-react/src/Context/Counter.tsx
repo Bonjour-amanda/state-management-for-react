@@ -5,7 +5,6 @@ import { CounterContext } from './CounterContext'
 const Counter = () => {
 
     // for react context
-    // const [count, setCount] = useState(0)
     const {count, setCount} = useContext(CounterContext)
 
     return(
@@ -15,7 +14,6 @@ const Counter = () => {
             <button onClick={() =>setCount(count + 1)}>Increment</button>
             <button onClick={() =>setCount(count - 1)}>Decrement</button>
         </div>
-        {/* <App/> */}
     </CounterContext.Provider>
     )
 }
